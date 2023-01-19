@@ -26,8 +26,7 @@ public class Praktikum2 {
                 int[] bagi = {Mynum};
                 X += bagi.length;
                 H += Mynum;
-            }
-            while(i);
+            } while(i);
         }
         catch (Exception e)
         {System.out.println("Rata-rata : " + H/X);
