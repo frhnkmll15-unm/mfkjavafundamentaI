@@ -19,14 +19,15 @@ public class Praktikum2 {
         Scanner MyObj = new Scanner(System.in);
         System.out.println("Masukan Angka:");
         int Mynum = 0; double H = 0.0; int X = 0;
+        boolean i = true;
         try {
-            for (int i = 0; i >= 0; i++)
-            {
+            do {
                 Mynum = MyObj.nextInt();
                 int[] bagi = {Mynum};
                 X += bagi.length;
                 H += Mynum;
             }
+            while(i);
         }
         catch (Exception e)
         {System.out.println("Rata-rata : " + H/X);
