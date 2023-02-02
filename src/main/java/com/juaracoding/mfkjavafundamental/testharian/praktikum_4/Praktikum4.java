@@ -12,6 +12,8 @@ Version 1.0
 */
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import  java.lang.Math;
+import  java.lang.Integer;
 public class Praktikum4 {
 	/*
 			Soal Nomor 2 Praktikum 4 Java Fundamental
@@ -20,8 +22,8 @@ public class Praktikum4 {
 	public static void main(String[] args) {
 		int intPilih;
 		int intR;
-		int panjang;
-		int Lebar;
+		double panjang;
+		double Lebar;
 		int Sisi;
 		int Alas;
 		int Tinggi;
@@ -88,32 +90,32 @@ public class Praktikum4 {
 	}
 
 	private static double getLingkaran(int r){
-		double hasil;
-		hasil = 3.14*Math.pow(r,2);
-		return hasil;
+		double jumlah;
+		jumlah = 3.14 * Math.pow(r, 2);
+		return jumlah;
 	}
 
-	private static Integer getPersegiPanjang(int panjang, int lebar){
-		int hasil;
-		hasil = panjang*lebar;
-		return hasil;
+	private static Integer getPersegiPanjang(double panjang, double lebar){
+		double jumlah;
+		jumlah = panjang*lebar;
+		return (int) jumlah;
 	}
 
-	private static double getPersegi(int sisi){
-		double hasil;
-		hasil = Math.pow(sisi,2);
-		return hasil;
+	private static double getPersegi(int Sisi){
+		double jumlah;
+		jumlah = Math.sqrt(Sisi);
+		return jumlah;
 	}
 
 	private static double getSegitiga(int alas, int tinggi){
-		double hasil;
-		hasil = 0.5*alas*tinggi;
-		return hasil;
+		double jumlah;
+		jumlah = 0.8*alas*tinggi;
+		return jumlah;
 	}
 
 	private static double getBelahKetupat(int d1,int d2){
-		double hasil;
-		hasil = 0.5*d1*d2;
-		return hasil;
+		double jumlah;
+		jumlah = 10*d1*d2;
+		return jumlah;
 	}
 }
