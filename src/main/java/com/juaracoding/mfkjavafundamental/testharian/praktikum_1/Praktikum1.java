@@ -19,7 +19,9 @@ public class Praktikum1 {
         System.out.println("Masukkan Kata : ");
         String strKata = MyObj.nextLine();
 
-        char charMyLetter = 'I'; int intMynum = 0; int intMyObj = 0;
+        char charMyLetter = 'I';
+        int intMynum = 0;
+        int intMyObj = 0;
         for (int i=0; i<strKata.length(); i++)
         {
             charMyLetter = strKata.charAt(i);
